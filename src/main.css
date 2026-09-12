@@ -439,6 +439,23 @@ h2::after {
   margin-top: 0.5rem;
 }
 
+.contact-intro {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.inline-link {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inline-link:hover {
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.5);
+}
+
 /* Footer */
 footer {
   text-align: center;
