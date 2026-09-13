@@ -600,16 +600,202 @@ footer {
 .footer-link:hover { color: var(--cyan); }
 
 /* ============================================================
-   Responsive
+   Responsive — Tablet (≤ 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  main {
+    max-width: 100%;
+    padding: 100px 6% 70px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================
+   Responsive — Mobile Large (≤ 768px)
    ============================================================ */
 @media (max-width: 768px) {
-  .glass-nav { padding: 0 5%; }
-  .glass-nav nav { gap: 1.5rem; }
+  /* Nav: tighten spacing, hide text links, keep contact btn */
+  .glass-nav {
+    padding: 0 5%;
+    height: 58px;
+  }
 
-  main { padding: 90px 5% 60px; gap: 60px; }
+  .glass-nav nav {
+    gap: 1.2rem;
+  }
 
-  .projects-grid { grid-template-columns: 1fr; }
-  .skills-grid   { grid-template-columns: 1fr; }
+  .glass-nav nav a:not(.btn-nav) {
+    display: none;
+  }
 
-  .hero-section h1 { font-size: 2.4rem; }
+  .logo {
+    font-size: 1rem;
+  }
+
+  /* Main layout */
+  main {
+    padding: 84px 5% 60px;
+    gap: 56px;
+  }
+
+  /* Section cards */
+  .section {
+    padding: 30px 24px;
+  }
+
+  /* Hero */
+  .hero-section {
+    min-height: 80vh;
+    padding-top: 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.3rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1.5rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Contact form */
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* h2 */
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================================================
+   Responsive — Mobile Small (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .glass-nav {
+    padding: 0 4%;
+  }
+
+  .logo {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 78px 4% 50px;
+    gap: 48px;
+  }
+
+  .section {
+    padding: 24px 18px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.9rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .terminal-badge {
+    font-size: 0.78rem;
+  }
+
+  /* Project cards: reduce inner padding for small screens */
+  .project-header {
+    padding: 18px 18px 12px;
+  }
+
+  .project-body {
+    padding: 0 18px;
+  }
+
+  .project-links {
+    padding: 16px 18px 20px;
+    gap: 16px;
+  }
+
+  .project-header h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Stack the label/text row vertically on tiny screens */
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 3px 0;
+  }
+
+  .row-label {
+    font-size: 0.65rem;
+  }
+
+  .project-body p {
+    font-size: 0.875rem;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* ============================================================
+   Responsive — Tiny (≤ 360px, e.g. older Androids)
+   ============================================================ */
+@media (max-width: 360px) {
+  main {
+    padding: 74px 3.5% 48px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .glass-nav nav {
+    gap: 0.8rem;
+  }
+
+  .btn-nav {
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.82rem !important;
+  }
 }
