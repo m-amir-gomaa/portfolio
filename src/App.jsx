@@ -157,8 +157,8 @@ export default function App() {
                 The same Keep app rebuilt in pure Vanilla JS — no React, no bundler, no dependencies. Custom state management, modular ES modules, CSS variables theming, and localStorage persistence. Proof that you don't always need a framework.
               </p>
               <div className="project-links">
-                <a href="https://m-amir-gomaa.github.io/Keep-Vanilla/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live Demo</a>
-                <a href="https://github.com/m-amir-gomaa/Keep-Vanilla" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
+                <a href="https://m-amir-gomaa.github.io/Keep/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live Demo</a>
+                <a href="https://github.com/m-amir-gomaa/Keep" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
               </div>
             </div>
 
