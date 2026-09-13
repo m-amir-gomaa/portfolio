@@ -110,52 +110,71 @@ export default function App() {
           <div className="projects-grid">
 
             <div className="project-card glass-card">
+              <div className="project-media">
+                <img src="/assets/instascript-demo.png" alt="instaScript Demo" />
+                {/* <video src="/assets/instascript-demo.mp4" autoPlay loop muted playsInline /> */}
+              </div>
               <div className="project-header">
                 <span className="project-tag">Python · AI · CLI</span>
                 <h3>instaScript</h3>
               </div>
-              <p>
-                A local-first CLI that turns any Instagram reel, YouTube video, podcast, or audio file into a clean, searchable transcript — using faster-whisper on CPU. Includes SHA-256 dedup, batch queue processing, optional DeepSeek AI fact-checking, and a NixOS Flake for reproducible installation.
-              </p>
+              <div className="project-body">
+                <p><strong>Problem:</strong> Extracting transcripts from local media or YouTube is slow, requires paid APIs, and involves complex pipeline management.</p>
+                <p><strong>Solution:</strong> A local-first CLI pipeline utilizing CPU-optimized faster-whisper. It handles media downloading (yt-dlp), deduplication (SHA-256), and concurrent batch queueing to deliver accurate markdown transcripts with zero API costs.</p>
+              </div>
               <div className="project-links">
                 <a href="https://github.com/m-amir-gomaa/ig_intel" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
               </div>
             </div>
 
             <div className="project-card glass-card">
+              <div className="project-media">
+                <img src="/assets/hermes-demo.png" alt="Hermes Webhook Dispatcher Demo" />
+              </div>
               <div className="project-header">
                 <span className="project-tag">Go · Concurrency</span>
                 <h3>Hermes Webhook Dispatcher</h3>
               </div>
-              <p>
-                A high-throughput webhook dispatcher written in Go. Processes thousands of concurrent HTTP requests using a worker pool pattern with mutexes and exponential backoff — designed as an isolated microservice that prevents blocking the main server.
-              </p>
+              <div className="project-body">
+                <p><strong>Problem:</strong> Monolithic servers crash or block incoming traffic when trying to dispatch thousands of outbound webhooks simultaneously.</p>
+                <p><strong>Solution:</strong> An isolated, high-throughput Go microservice. It acts as a buffer, ingesting bulk webhook payloads and distributing them across a strict worker pool (goroutines) to process outbound HTTP requests concurrently without memory exhaustion.</p>
+              </div>
               <div className="project-links">
                 <a href="https://github.com/m-amir-gomaa/portfolio-hermes" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
+                <a href="https://portfolio-hermes.onrender.com/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live UI Stream</a>
               </div>
             </div>
 
             <div className="project-card glass-card">
+              <div className="project-media">
+                <img src="/assets/keep-next-demo.png" alt="Keep Next.js Demo" />
+              </div>
               <div className="project-header">
                 <span className="project-tag">Next.js · Drizzle · Postgres</span>
                 <h3>Keep — Full-Stack</h3>
               </div>
-              <p>
-                A production-grade clone of Google Keep designed to demonstrate modern full-stack architecture. Built with Next.js 16 App Router, secured via NextAuth, and powered by a serverless PostgreSQL database (Neon) interfaced through Drizzle ORM. Features a highly responsive UI with optimistic updates, robust relational data modeling, and seamless Vercel deployment.
-              </p>
+              <div className="project-body">
+                <p><strong>Problem:</strong> Building cross-session, multi-device web applications requires managing complex distributed state and secure relational data.</p>
+                <p><strong>Solution:</strong> A production-ready note application proving full-stack competence. It bridges a responsive Next.js frontend with a serverless PostgreSQL database (Neon), using Drizzle ORM for type-safe schema definitions and NextAuth for secure session management.</p>
+              </div>
               <div className="project-links">
+                <a href="https://keep-nextjs-eight.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live Demo</a>
                 <a href="https://github.com/m-amir-gomaa/keep-nextjs" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
               </div>
             </div>
 
             <div className="project-card glass-card">
+              <div className="project-media">
+                <img src="/assets/keep-vanilla-demo.png" alt="Keep Vanilla JS Demo" />
+              </div>
               <div className="project-header">
                 <span className="project-tag">Vanilla JS · No Framework</span>
                 <h3>Keep — Client-Side</h3>
               </div>
-              <p>
-                Written entirely by hand before the agentic AI era — zero frameworks, no bundlers, and no code generation. This pure Vanilla JavaScript implementation utilizes custom state management, modular ES6 imports, CSS variables for theming, and the browser's native <code>localStorage</code> API for persistent cross-session data storage. A deliberate showcase of deep fundamental DOM fluency.
-              </p>
+              <div className="project-body">
+                <p><strong>Problem:</strong> Heavy JavaScript frameworks often mask a lack of fundamental DOM and browser API understanding.</p>
+                <p><strong>Solution:</strong> A purely hand-written, framework-less implementation built prior to the AI-generation era. It demonstrates deep fundamental fluency by manually managing state, modular ES6 imports, and utilizing the native <code>localStorage</code> API for cross-session persistence.</p>
+              </div>
               <div className="project-links">
                 <a href="https://m-amir-gomaa.github.io/Keep/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live Demo</a>
                 <a href="https://github.com/m-amir-gomaa/Keep" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
