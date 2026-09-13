@@ -28,6 +28,7 @@ const projects = [
     problem: 'Demonstrating full-stack competence requires managing authentication, relational data, and cloud deployment cohesively.',
     solution: 'A production note-taking app on the Next.js 16 App Router, secured by NextAuth, with a Neon serverless PostgreSQL backend via Drizzle ORM — deployed to Vercel with automatic CI/CD.',
     links: [
+      { label: 'Live Demo', href: 'https://keep-nextjs0.vercel.app/' },
       { label: 'GitHub', href: 'https://github.com/m-amir-gomaa/keep-nextjs' },
     ],
     mediaKey: 'keep-next',
