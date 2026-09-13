@@ -44,6 +44,28 @@ const projects = [
     ],
     mediaKey: 'keep-vanilla',
   },
+  {
+    tag: 'REST API · Frontend',
+    title: 'API Explorer Dashboard',
+    problem: 'Clients often need to interact with external REST APIs and see the data presented cleanly without heavy frameworks.',
+    solution: 'A standalone API explorer built with Vanilla HTML/CSS/JS. Features live fetching from multiple public APIs (GitHub, OpenWeather, CoinGecko, JSONPlaceholder) and renders the raw JSON payload alongside a styled, formatted data card.',
+    links: [
+      { label: 'Live Demo', href: 'https://m-amir-gomaa.github.io/api-dashboard/' },
+      { label: 'GitHub', href: 'https://github.com/m-amir-gomaa/api-dashboard' },
+    ],
+    mediaKey: 'api-dashboard',
+  },
+  {
+    tag: 'Crypto Data · Real-time',
+    title: 'Market Data Dashboard',
+    problem: 'Many applications require real-time polling of live market data, requiring careful state management to avoid visual jank.',
+    solution: 'A live cryptocurrency dashboard using the CoinGecko API. Features a 30-second auto-refresh cycle, trending coin charts, and global market statistics with a responsive glassmorphism UI.',
+    links: [
+      { label: 'Live Demo', href: 'https://m-amir-gomaa.github.io/market-dashboard/' },
+      { label: 'GitHub', href: 'https://github.com/m-amir-gomaa/market-dashboard' },
+    ],
+    mediaKey: 'market-dashboard',
+  },
 ]
 
 function ProjectCard({ tag, title, problem, solution, links, mediaKey }) {
