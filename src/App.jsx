@@ -137,11 +137,11 @@ export default function App() {
 
             <div className="project-card glass-card">
               <div className="project-header">
-                <span className="project-tag">Next.js · Drizzle · SQLite</span>
+                <span className="project-tag">Next.js · Drizzle · Postgres</span>
                 <h3>Keep — Full-Stack</h3>
               </div>
               <p>
-                A full-stack Google Keep clone built with Next.js 16 App Router, Tailwind CSS, Drizzle ORM, SQLite, and NextAuth. Fully authenticated with persistent notes, archiving, and trash — deployed end-to-end.
+                A production-grade clone of Google Keep designed to demonstrate modern full-stack architecture. Built with Next.js 16 App Router, secured via NextAuth, and powered by a serverless PostgreSQL database (Neon) interfaced through Drizzle ORM. Features a highly responsive UI with optimistic updates, robust relational data modeling, and seamless Vercel deployment.
               </p>
               <div className="project-links">
                 <a href="https://github.com/m-amir-gomaa/keep-nextjs" target="_blank" rel="noopener noreferrer" className="project-link-btn">GitHub Repo</a>
@@ -154,7 +154,7 @@ export default function App() {
                 <h3>Keep — Client-Side</h3>
               </div>
               <p>
-                Written entirely by hand before the agentic AI era — no React, no bundler, no code generation. Pure Vanilla JS with custom state management, modular ES modules, CSS variables theming, and localStorage persistence. A deliberate proof that solid fundamentals matter more than framework familiarity.
+                Written entirely by hand before the agentic AI era — zero frameworks, no bundlers, and no code generation. This pure Vanilla JavaScript implementation utilizes custom state management, modular ES6 imports, CSS variables for theming, and the browser's native <code>localStorage</code> API for persistent cross-session data storage. A deliberate showcase of deep fundamental DOM fluency.
               </p>
               <div className="project-links">
                 <a href="https://m-amir-gomaa.github.io/Keep/" target="_blank" rel="noopener noreferrer" className="project-link-btn">Live Demo</a>
